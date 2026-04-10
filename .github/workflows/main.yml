@@ -4,7 +4,4 @@ name: Test Ryanair                                                              
       runs-on: ubuntu-latest
       steps:
         - name: Test Ryanair API
-          run: curl -s -o /dev/null -w "%{http_code}" -H "accept: application/json, text/plain, */*" -H "client: desktop" -H "client-version:        
-  3.193.1" -H "traceparent: 00-aabbccddeeff00112233445566778899-aabbccdd11223344-00" "https://www.ryanair.com/api/booking/v4/it-it/availability?ADT=1
-  &TEEN=0&CHD=0&INF=0&Origin=CAG&Destination=BGY&promoCode=&IncludeConnectingFlights=false&DateOut=2026-06-24&DateIn=&FlexDaysBeforeOut=2&FlexDaysOut
-  =2&FlexDaysBeforeIn=2&FlexDaysIn=2&RoundTrip=false&IncludePrimeFares=false&ToUs=AGREED"
+          run:curl -s -o /dev/null -w "%{http_code}" -H "accept:application/json, text/plain, */*" -H "client:desktop" -H "client-version:3.193.1" -H "traceparent: 00-aabbccddeeff00112233445566778899-aabbccdd11223344-00" "https://www.ryanair.com/api/booking/v4/it-it/availability?ADT=1&TEEN=0&CHD=0&INF=0&Origin=CAG&Destination=BGY&promoCode=&IncludeConnectingFlights=false&DateOut=2026-06-24&DateIn=&FlexDaysBeforeOut=2&FlexDaysOut=2&FlexDaysBeforeIn=2&FlexDaysIn=2&RoundTrip=false&IncludePrimeFares=false&ToUs=AGREED"
